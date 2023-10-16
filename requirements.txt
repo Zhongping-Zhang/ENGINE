@@ -1,0 +1,11 @@
+clip==0.2.0
+fpdf==1.7.2
+matplotlib==3.4.2
+numpy==1.20.3
+Pillow==8.4.0
+spacy==3.1.2
+torch==1.9.0
+torchvision==0.10.0
+tqdm==4.62.3
+transformers==4.10.2
+ujson==4.0.1
