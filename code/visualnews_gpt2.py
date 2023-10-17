@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 # Original Copyright 2020 The HuggingFace Inc. team. All rights reserved.
-# Modified work Copyright 2021 The authors of ECCV 2022 submission # 2135
+# Modified work Copyright 2021 The authors of ENGINE: https://arxiv.org/pdf/2112.05917.pdf
 # 
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
