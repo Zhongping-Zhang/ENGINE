@@ -42,7 +42,7 @@ pip install -r requirements_clip.txt
 
 
 ## Datasets:
-We performed our experiments on three datasets, GoodNews, VisualNews, and WikiText. We provided the versions we employed for model training and evaluation through the following links. Compared to the original version, we removed broken links or non-English articles.
+We performed our experiments on three datasets, GoodNews, VisualNews, and WikiText. We provided the versions we employed for model training and evaluation through the following links. Compared to the original version, we removed broken links and non-English articles.
 
 | Datasets           | Google Drive Link                                                                                     |
 |--------------------|-------------------------------------------------------------------------------------------------------|
@@ -55,28 +55,31 @@ If you would like to obtain the original data, please consider collect the data 
 [GoodNews](https://github.com/furkanbiten/GoodNews) & [VisualNews](https://github.com/FuxiaoLiu/VisualNews-Repository) & [WikiText](https://arxiv.org/abs/1609.07843)
 
 ## Train & Evaluate the ENGINE model
-### Train
-Run the following script to finetune GPT2:
+### Train and Evaluate PPL
+Run the following script to finetune and evaluate GPT2:
 ```sh
-sh code/scripts/run_train_gpt2_goodnews.sh
+cd code &
+sh scripts/run_train_gpt2_goodnews.sh & 
+sh scripts/run_eval_gpt2_goodnews.sh
 ```
-to train ENGINE :
+Run the following script to finetune and evaluate ENGINE:
 ```sh
-sh code/scripts/run_train_gpt2_goodnwes_NEboth_wcap.sh
-```
-
-### Evaluate
-Run the following scripts to calculate perplexity:
-```sh
-sh run_eval_gpt2_goodnews.sh &&
-sh run_eval_gpt2_goodnews_NEboth_wcap.sh
+sh scripts/run_train_gpt2_goodnwes_NEboth_wcap.sh & 
+sh scripts/run_eval_gpt2_goodnews_NEboth_wcap.sh
 ```
 
-## Article Generation
+### Article Generation
 Run the following script to generate articles.
 ```sh
-sh EXP1_NEboth_art_gen_goodnews.sh
+sh scripts/EXP1_NEboth_art_gen_goodnews.sh
 ```
 
-## Pretrained Models
-Download and unzip pretrained ENGINE models in these URLs (comming soon).
+### Experiments on VisualNews
+Experiments on VisualNews can be performed by simply modifying the file paths in our goodnews scripts.
+
+
+## Models Weights
+Download ENGINE weights in this [http URL](https://drive.google.com/drive/folders/1I_igVP0oxdo0gQlFEHAzznG2Ion3EIaa?usp=sharing).
+
+
+
