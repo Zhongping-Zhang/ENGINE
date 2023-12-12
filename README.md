@@ -5,11 +5,14 @@
 **ENGINE** is an entity-aware model for article generation and retrieval. This repository contains the implementation of our [paper](https://arxiv.org/pdf/2112.05917.pdf).
 If you find this code useful in your research, please consider citing:
 
-    @InProceedings{ZhangENGIN2023,
-         author={Zhongping Zhang and Yiwen Gu and Bryan A. Plummer},
-         title={Show, Write, and Retrieve: Entity-aware Article Generation and Retrieval},
-         booktitle={Findings of the Association for Computational Linguistics: EMNLP 2020},
-         year={2023}}
+    @inproceedings{
+        zhang2023show,
+        title={Show, Write, and Retrieve: Entity-aware Article Generation and Retrieval},
+        author={Zhongping Zhang and Yiwen Gu and Bryan A. Plummer},
+        booktitle={The 2023 Conference on Empirical Methods in Natural Language Processing},
+        year={2023},
+        url={https://openreview.net/forum?id=SlL3dr0Xa9}
+        }
 
 <img src="figure_example.png" alt="alt text" style="zoom:80%;" />
 
